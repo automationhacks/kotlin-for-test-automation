@@ -1,4 +1,4 @@
-package _02_classes
+package _02_classes.refactored
 
 import org.testng.Assert
 
@@ -6,7 +6,7 @@ data class FullName(
         val first: String,
         val last: String)
 
-fun parseNameRefactored(name: String): FullName {
+fun parseName(name: String): FullName {
     val space = name.indexOf(' ')
     return FullName(
             name.substring(0, space),
@@ -14,7 +14,7 @@ fun parseNameRefactored(name: String): FullName {
 }
 
 fun main(args: Array<String>) {
-    val name = parseNameRefactored("Jane Doe")
+    val name = parseName("Jane Doe")
     val first = name.first
     val last = name.last
 
@@ -23,6 +23,6 @@ fun main(args: Array<String>) {
     Assert.assertEquals(first, "Jane")
     Assert.assertEquals(last, "Doe")
 
-    if (name != parseNameRefactored("Jane Doe"))
+    if (name != parseName("Jane Doe"))
         println("Equals does not work...")
 }

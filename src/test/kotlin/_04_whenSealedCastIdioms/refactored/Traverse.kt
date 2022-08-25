@@ -1,10 +1,5 @@
 package _04_whenSealedCastIdioms.refactored
 
-import _04_whenSealedCastIdioms.Container
-import _04_whenSealedCastIdioms.Element
-import _04_whenSealedCastIdioms.Text
-import _04_whenSealedCastIdioms.extractText
-
 sealed class Element
 class Container(vararg val children: Element) : Element()
 class Text(val text: String) : Element()

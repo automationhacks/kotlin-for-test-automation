@@ -4,9 +4,9 @@ fun printEven() {
     val nums = (1..100).toList()
     val list = mutableListOf<Int>()
 
-    for (it in nums) {
-        if (it % 2 == 0) {
-            list.add(it)
+    for (i in nums) {
+        if (i % 2 == 0) {
+            list.add(i)
         }
     }
 

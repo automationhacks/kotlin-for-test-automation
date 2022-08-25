@@ -1,4 +1,4 @@
-package concepts.idioms.refactored._05_expressions
+package _05_scopingFunctions.refactored
 
 class Robot(val name: String, val function: String, val weight: Int)
 

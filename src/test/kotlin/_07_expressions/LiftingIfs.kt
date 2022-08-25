@@ -3,7 +3,6 @@ package _07_expressions
 class Response(val statusCode: Int)
 
 fun main() {
-    // A sample response
     val response = Response(200)
 
     val result: String
